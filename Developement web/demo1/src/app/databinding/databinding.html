@@ -1,0 +1,26 @@
+<div class="div">
+    <label class="label">{{ecole}}</label>
+    <ul>
+        <li>{{pers.num}}</li>
+        <li>{{pers.prenom}}</li>
+        <li>{{pers.nom}}</li>
+        <li>{{pers | json}}</li>
+    </ul>
+    <ul>
+        <li>{{tab[0]}}</li>
+        <li>{{tab[1]}}</li>
+        <li>{{tab[2]}}</li>
+        <li>{{tab[3]}}</li>
+        <li>{{tab[4]}}</li>
+    </ul>
+
+    <label >{{direbonjour()}}</label>
+
+    <input [value]="num"/>
+    <div>
+        <button (click)="example1()">click</button>
+        
+    </div>
+
+  
+</div>

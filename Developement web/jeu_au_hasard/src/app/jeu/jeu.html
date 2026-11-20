@@ -1,0 +1,27 @@
+<div style="max-width: 400px; margin: 20px auto; font-family: Arial, sans-serif;">
+  <h2> Jeu hasard</h2>
+  <p>Devinez le nombre secret entre 0 et 100.</p>
+  <p><strong>Essais restants : {{ nombreEssaies }} / 5</strong></p>
+
+  <div>
+    <input 
+      type="number" 
+      [(ngModel)]="nombreSaisi" 
+      [disabled]="jeuTermine" 
+      placeholder="Entrez un nombre"
+      min="0" 
+      max="100"
+    />
+    <button (click)="verifierNombre()" [disabled]="jeuTermine || nombreSaisi === null">
+      Tester
+    </button>
+  </div>
+
+  <p *ngIf="message" style="margin-top: 15px; font-weight: bold;">
+    {{ message }}
+  </p>
+
+  <button *ngIf="jeuTermine" (click)="initialiserJeu()" style="margin-top: 10px;">
+    Rejouer
+  </button>
+</div>

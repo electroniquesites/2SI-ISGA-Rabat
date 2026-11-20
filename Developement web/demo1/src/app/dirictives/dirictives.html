@@ -1,0 +1,16 @@
+<div>
+    <h1>demo dirictives</h1>
+    <ul>
+        <li *ngIf="tab[0]%2 != 0 else sinon" >
+            {{tab[0]}} odd number
+        </li>
+        <ng-template #sinon>
+            <li>
+                {{tab[0]}} even number
+            </li>
+
+        </ng-template>
+
+       
+    </ul>
+</div>
