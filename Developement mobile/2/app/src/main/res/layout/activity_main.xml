@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_main"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -17,9 +18,8 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#eee5"
             android:gravity="center"
             android:orientation="vertical"
             android:padding="16dp">
@@ -27,55 +27,134 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="45dp"
-                android:text="@string/title"
-                android:textColor="#456eee"
-                android:textSize="40sp" />
+                android:layout_margin="20dp"
+                android:text="Bonjour ☻"
+                android:textAlignment="center"
+                android:textColor="@color/J"
+                android:textSize="36sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="45dp"
+                android:layout_margin="20dp"
                 android:text="@string/title"
-                android:textColor="#456eee"
-                android:textSize="40sp" />
+                android:textAlignment="center"
+                android:textColor="@color/J"
+                android:textSize="36sp" />
 
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_margin="20dp"
+                android:text="@string/myname"
+                android:textAlignment="center"
+                android:textColor="@color/J"
+                android:textSize="36sp" />
 
-                <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/namemyclass"
+                android:textAlignment="center"
+                android:textColor="@color/J"
+                android:textSize="36sp" />
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:scrollbars="none">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@mipmap/maclaren" />
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/maclaren" />
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bus1" />
 
-            </LinearLayout>
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/bus" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bus2" />
+
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/dino" />
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/paysage" />
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bus3" />
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/elephant" />
+                    <ImageView
+                        android:layout_width="180dp"
+                        android:layout_height="130dp"
+                        android:layout_margin="6dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/fleur" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
 
             <Button
                 android:id="@+id/btnNav1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Go To Calculatrice"
+                android:layout_margin="30dp"
+                android:backgroundTint="@color/btn_primary"
+                android:text="@string/btnnav1"
+                android:textColor="@color/text_light"
                 android:textSize="25sp" />
+
             <TextView
                 android:id="@+id/msg"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp" />
+                android:layout_margin="12dp"
+                android:textColor="@color/text_light"
+                android:textSize="40sp" />
 
             <TextView
                 android:id="@+id/num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp" />
+                android:layout_margin="12dp"
+                android:textColor="@color/text_light"
+                android:textSize="50sp" />
 
         </LinearLayout>
 

@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">My Application 1</string>
-    <string name="title"> demo android</string>
+    <string name="title"> Demo Android</string>
     <string name="title2">demo 2</string>
     <string name="result">0</string>
+    <string name="btnnav1">Go To Calculatrice</string>
+    <string name="myname">Hammoucha Badreddine</string>
+    <string name="namemyclass">2SI ISI ISGA Rabat</string>
 </resources>

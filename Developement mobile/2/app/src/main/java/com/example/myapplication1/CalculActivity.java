@@ -39,22 +39,17 @@ public class CalculActivity extends AppCompatActivity {
         btnPlus = findViewById(R.id.btnPlus);
         textResult = findViewById(R.id.textResult);
         message = findViewById(R.id.message);
-        msg = findViewById(R.id.msg);
-        num = findViewById(R.id.num);
+
         btnNav2 = findViewById(R.id.btnNav2);
 
-
-        i2 = getIntent();
-        if (i2 != null) {
-            String intentMsg = i2.getStringExtra("msg");
-            String intentNum = i2.getStringExtra("num");
-
-            if (intentMsg != null && msg != null) msg.setText(intentMsg);
-            if (intentNum != null && num != null) num.setText(intentNum);
-        }
-
-        // Action du bouton "Go to MainActivity"
-        btnNav2.setOnClickListener(v -> finish());
+        btnNav2 = findViewById(R.id.btnNav2);
+        btnNav2.setOnClickListener(v -> {
+            Intent i2 = new Intent(CalculActivity.this, MainActivity.class);
+            i2.putExtra("msg", "bonjour !!");
+            i2.putExtra("num", "2026");
+            startActivity(i2);
+            finish();
+        });
 
         btnPlus.setOnClickListener(v -> calculer('+'));
         btnMinus.setOnClickListener(v -> calculer('-'));
